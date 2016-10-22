@@ -1,1 +1,4 @@
-%h1 Photogram using haml
+%h1 Welcome to Photogram
+-@posts.each do  |post|
+	=image_tag post.image.url(:medium)
+	=post.caption
